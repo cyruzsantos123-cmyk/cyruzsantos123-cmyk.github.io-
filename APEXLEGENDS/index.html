@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX LEGENDS | Into the Arena</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  --red:#ff3c32;
+  --orange:#ff8b38;
+  --bg:#090b10;
+  --panel:#141820;
+  --white:#f5f5f5;
+  --muted:#a8adb8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:'Rajdhani',sans-serif}
+nav{
+  position:sticky;top:0;z-index:10;background:#090b10eF;
+  border-bottom:1px solid #ffffff18;padding:18px 7%;
+  display:flex;justify-content:space-between;align-items:center;gap:20px
+}
+.logo{font:900 22px Orbitron;color:var(--red);letter-spacing:3px}
+nav a{color:#ddd;text-decoration:none;margin-left:22px;font-weight:700;letter-spacing:1px}
+nav a:hover{color:var(--red)}
+.hero{
+  min-height:650px;padding:100px 9%;display:flex;align-items:center;
+  background:linear-gradient(90deg,#090b10 5%,#090b10e8 45%,#090b1040),
+  url('https://apexlegends.wiki.gg/wiki/Special:FilePath/Bloodhound-wise-warrior-wallpaper.png') center/cover;
+}
+.hero-content{max-width:650px}
+.tag{color:var(--orange);font-weight:700;letter-spacing:5px}
+h1{font:900 clamp(48px,8vw,92px)/.95 Orbitron;margin:22px 0}
+h1 span{color:var(--red)}
+.hero p{font-size:21px;color:#d0d0d0;max-width:550px;line-height:1.5}
+.btn{
+ display:inline-block;margin-top:30px;padding:14px 27px;background:var(--red);
+ color:white;text-decoration:none;font:700 14px Orbitron;letter-spacing:1px;
+ clip-path:polygon(0 0,90% 0,100% 30%,100% 100%,10% 100%,0 70%);
+}
+section{padding:85px 8%}
+.section-tag{color:var(--red);font-weight:700;letter-spacing:4px}
+h2{font:700 clamp(28px,4vw,44px) Orbitron;margin:12px 0 35px}
+.intro{max-width:750px;color:var(--muted);font-size:20px;line-height:1.6}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}
+.stat{background:var(--panel);padding:25px;border-left:3px solid var(--red)}
+.stat strong{font:700 25px Orbitron;color:var(--orange);display:block}
+.stat span{color:var(--muted)}
+.dark-section{background:#10141b}
+.legends{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.legend{
+ background:var(--panel);border:1px solid #ffffff15;overflow:hidden;
+ transition:.3s;position:relative
+}
+.legend:hover{transform:translateY(-8px);border-color:var(--red)}
+.legend img{width:100%;height:300px;object-fit:cover;object-position:top;background:#222}
+.legend-info{padding:22px}
+.legend-info small{color:var(--red);letter-spacing:2px;font-weight:700}
+.legend-info h3{font:700 23px Orbitron;margin:8px 0}
+.legend-info p{color:var(--muted);font-size:17px;line-height:1.4}
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.feature{padding:25px;background:var(--panel);border:1px solid #ffffff12}
+.feature b{color:var(--orange);font:700 18px Orbitron}
+.feature p{margin-top:10px;color:var(--muted);font-size:18px}
+.quote{border-left:4px solid var(--red);padding:15px 25px;font-size:25px;font-weight:700;margin-top:35px}
+footer{text-align:center;padding:30px;color:#858b96;border-top:1px solid #ffffff15}
+.back{color:var(--orange);text-decoration:none}
+@media(max-width:750px){
+ nav{flex-direction:column}nav a{margin:0 7px;font-size:14px}
+ .hero{min-height:560px;padding:75px 7%}
+ .legends,.stats,.features{grid-template-columns:1fr}
+ .legend img{height:340px}
+}
+</style>
+</head>
+<body>
+<nav>
+ <div class="logo">APEX.</div>
+ <div>
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#legends">LEGENDS</a>
+  <a href="#features">FEATURES</a>
+ </div>
+</nav>
+
+<header class="hero" id="home">
+ <div class="hero-content">
+  <div class="tag">DROP IN. FIGHT. SURVIVE.</div>
+  <h1>INTO THE <span>ARENA</span></h1>
+  <p>Enter a battlefield where legends are made. Build your squad, master unique abilities, and fight to become the champion.</p>
+  <a class="btn" href="#legends">MEET THE LEGENDS</a>
+ </div>
+</header>
+
+<section id="about">
+ <div class="section-tag">01 / THE GAME</div>
+ <h2>WELCOME TO THE OUTLANDS</h2>
+ <p class="intro">Apex Legends is a free-to-play hero battle royale game where players choose unique characters called Legends. Each Legend brings special abilities that can change the outcome of a battle. Teamwork, strategy, and survival are the keys to victory.</p>
+ <div class="stats">
+  <div class="stat"><strong>3</strong><span>Players per standard squad</span></div>
+  <div class="stat"><strong>LEGENDS</strong><span>Unique characters and abilities</span></div>
+  <div class="stat"><strong>BR</strong><span>Battle Royale experience</span></div>
+ </div>
+</section>
+
+<section class="dark-section" id="legends">
+ <div class="section-tag">02 / CHARACTER FILES</div>
+ <h2>CHOOSE YOUR LEGEND</h2>
+ <div class="legends">
+  <article class="legend">
+   <img src="https://tse2.mm.bing.net/th/id/OIP.0lokF6Ykdx1-Qe_hYTd6AgHaEK?r=0&pid=Api&h=220&P=0" alt="Bloodhound">
+   <div class="legend-info"><small>RECON</small><h3>BLOODHOUND</h3><p>A technological tracker who uses hunting skills and tracking tools to locate enemies.</p></div>
+  </article>
+  <article class="legend">
+   <img src="https://tse3.mm.bing.net/th/id/OIP.wdMYlb00NmEk58CPq6pmbQHaEK?r=0&pid=Api&h=220&P=0" alt="Wraith">
+   <div class="legend-info"><small>SKIRMISHER</small><h3>WRAITH</h3><p>An interdimensional fighter who can sense danger and move through the void.</p></div>
+  </article>
+  <article class="legend">
+   <img src="https://tse2.mm.bing.net/th/id/OIP.BZxwHyaGyPDPj1-k-th56QHaN_?r=0&pid=Api&h=220&P=0" alt="Gibraltar">
+   <div class="legend-info"><small>SUPPORT</small><h3>GIBRALTAR</h3><p>A defensive Legend who protects teammates with a shield and defensive abilities.</p></div>
+  </article>
+ </div>
+</section>
+
+<section id="features">
+ <div class="section-tag">03 / FIELD GUIDE</div>
+ <h2>WHAT MAKES APEX UNIQUE?</h2>
+ <div class="features">
+  <div class="feature"><b>01 — TEAMWORK</b><p>Work with your squad, communicate, and support one another to survive.</p></div>
+  <div class="feature"><b>02 — UNIQUE ABILITIES</b><p>Every Legend has abilities that create different strategies during combat.</p></div>
+  <div class="feature"><b>03 — LOOT & EQUIPMENT</b><p>Collect weapons, ammunition, shields, and healing items across the map.</p></div>
+  <div class="feature"><b>04 — LAST SQUAD STANDING</b><p>Stay inside the safe zone and outlast every other squad to claim victory.</p></div>
+ </div>
+ <div class="quote">“The Arena doesn't make Legends. It reveals them.”</div>
+</section>
+
+<footer>
+ <p>APEX LEGENDS FAN PROJECT · STUDENT WEBSITE</p>
+ <p style="margin-top:10px"><a class="back" href="../index.html">← BACK TO PORTFOLIO</a></p>
+ <p style="margin-top:10px;font-size:13px">Fan-made educational project. Apex Legends belongs to its respective owners.</p>
+</footer>
+</body>
+</html>
